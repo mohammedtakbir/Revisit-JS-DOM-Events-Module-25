@@ -19,6 +19,29 @@ function makeGreen() {
 
 //* option-04
 const makePurple = document.getElementById('make-purple');
-makePurple.onclick = function(){
+makePurple.onclick = function () {
     document.body.style.backgroundColor = 'purple'
 }
+
+//* option-5.1
+document.getElementById('make-coral').addEventListener('click', () => {
+    document.body.style.backgroundColor = 'coral';
+})
+
+//* option-5.2
+document.getElementById('make-powderBlue').addEventListener('click', makePowderBlue);
+function makePowderBlue() {
+    document.body.style.backgroundColor = 'powderblue';
+}
+
+//* option-5.3
+const makeLightGray = document.getElementById('make-lightgray');
+makeLightGray.addEventListener('click', function () {
+    document.body.style.backgroundColor = 'lightgray';
+})
+
+
+
+
+
+
