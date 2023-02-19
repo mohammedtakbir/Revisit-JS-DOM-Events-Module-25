@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="h1">Explore DOM Events</h1>
+    </header>
+
+    <button onclick="console.log('click me')">Click me</button>
+    <button onclick="console.log('another click')">Another click</button>
+
+    <!-- //* option-01 -->
+    <button onclick="document.body.style.backgroundColor = 'yellow'">Make Yellow</button>
+
+    <!-- //* option-02 -->
+    <button onclick="makeRed()">Make Red</button>
+
+    <!-- //* option-03 -->
+    <button id="make-green">Make Green</button>
+
+    <!-- //* option-04 -->
+    <button id="make-purple">Make Purple</button>
+
+    <script src="js/events.js"></script>
+</body>
+
+</html>
